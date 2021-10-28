@@ -24,10 +24,7 @@ jobs:
       - name: Checkout Kong source code
         uses: actions/checkout@v2
 
-      - name: Docker kong
-        id: docker_kong
-        uses: docker-kong/kong@v2.5
-        with:
+       with:
           images: ghcr.io/arvigenterprises/kong:main
           tag-sha: true
           tag-edge: false
