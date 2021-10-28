@@ -24,7 +24,7 @@ jobs:
       - name: Checkout Kong source code
         uses: actions/checkout@v2
 
-       with:
+        with:
           images: ghcr.io/arvigenterprises/kong:main
           tag-sha: true
           tag-edge: false
