@@ -16,7 +16,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: self-hosted
     
-	permissions:
+    permissions:
       contents: read
       packages: write
 	  
@@ -33,7 +33,7 @@ jobs:
           tag-edge: false
           tag-latest: true
 		  
-	  - name: Set up QEMU
+       -  name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
       - name: Set up Docker Buildx
