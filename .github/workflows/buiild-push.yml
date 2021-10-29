@@ -11,7 +11,7 @@ env:
 jobs:
   # This job Builds our docker image and pushes it to Github Container Registry
   build-and-push-image:
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
 
     permissions:
       contents: read
